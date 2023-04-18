@@ -57,7 +57,7 @@ const CreateTodo = () => {
             type="radio"
             name="priority"
             value="Low"
-            onChange={(e) => setpriority(e.target.value)}
+            onClick={(e) => setpriority(e.target.value)}
             className="form-check form-check-inline"
           />
           <label className="form-check-label mx-1">Medium</label>
@@ -65,7 +65,7 @@ const CreateTodo = () => {
             type="radio"
             name="priority"
             value="Medium"
-            onChange={(e) => setpriority(e.target.value)}
+            onClick={(e) => setpriority(e.target.value)}
             className="form-check form-check-inline"
           />
           <label className="form-check-label mx-1">High</label>
@@ -73,7 +73,7 @@ const CreateTodo = () => {
             type="radio"
             name="priority"
             value="High"
-            onChange={(e) => setpriority(e.target.value)}
+            onClick={(e) => setpriority(e.target.value)}
             className="form-check form-check-inline "
           />
         </div>

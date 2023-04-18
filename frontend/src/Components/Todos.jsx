@@ -32,13 +32,13 @@ function Todos() {
         <tbody>
           {todos.map((todo, index) => {
             return (
-              <tr>
+              <tr key={index+1}>
                 <td>{index + 1}</td>
                 <td>{todo.todo_description}</td>
                 <td>{todo.todo_responsible}</td>
                 <td>{todo.todo_priority}</td>
                 <td className="d-flex justify-content-center">
-                  <Link className="btn btn-warning btn-sm mx-1" to="/edit-todo">
+                  <Link className="btn btn-warning btn-sm mx-1" to={`/edit-todo/${todo._id}`}>
                     Edit
                   </Link>
                   <Link className="btn btn-danger btn-sm mx-1" onClick={()=>{

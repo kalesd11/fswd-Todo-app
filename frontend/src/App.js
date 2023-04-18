@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Todos/>}/>
         <Route path='/create-todo' element={<CreateTodo/>}/>
-        <Route path='/edit-todo' element={<EditTodo/>}/>
+        <Route path='/edit-todo/:id' element={<EditTodo/>}/>
       </Routes>
     </div>
   );
